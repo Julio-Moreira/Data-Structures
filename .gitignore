@@ -1,3 +1,4 @@
 vendor/*
 .phpunit.result.cache
 resultTest.txt
+.gitignore
