@@ -1,0 +1,36 @@
+{
+    "name": "julio/data_structure",
+    "description": "All data structures",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Julio\\DataStructure\\": "src/"
+        }
+    },
+    "require": {
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "pestphp/pest": "^1.22"
+    },
+    "scripts": {  
+        "unitTest": "./vendor/bin/pest --group=unit",
+        "featureTest": "./vendor/bin/pest --group=feature",
+        "tests": [  
+            "@unitTest",
+            "@featureTest"
+        ]  
+    },
+    "scripts-descriptions": { 
+        "unitTest": "run all of unit tests",
+        "featureTest": "run all of feature tests",
+        "tests": "run all of tests"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
